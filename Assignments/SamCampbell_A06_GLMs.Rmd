@@ -88,7 +88,9 @@ plot5 <-
   ggplot(NTL_LTER_JulyWrangled, aes(x = depth, y = temperature_C)) +
   geom_point() +
   geom_smooth(method = 'lm', se = FALSE) +
-  ylim(0, 35)
+  ylim(0, 35) +
+  ylab("Temp in degrees C") + 
+  xlab("Depth in meters")
 print(plot5)
 
 ```
